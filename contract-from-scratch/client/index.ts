@@ -9,7 +9,7 @@ const key: Uint8Array = Uint8Array.from([
 	106, 55, 174, 147, 231, 62, 143, 24, 57, 2, 141, 79, 137, 96,
 ]);
 const signer =  web3.Keypair.fromSecretKey(key);
-const data : Buffer = Buffer.from('\0')
+const data : Buffer = Buffer.from(Uint8Array.from([1, 1, 2]))
 const program_id = new web3.PublicKey('H6N37xT1X3zWztCvkqKGeEVpS6ZbaTQmUZm82tezdUBg')
 
 async function main() {
