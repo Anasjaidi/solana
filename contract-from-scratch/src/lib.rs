@@ -13,7 +13,8 @@ fn process_instruction(
     match key {
         0 => msg!("zero"),
         1 => msg!("one"),
-        _ => msg!("panic"),
+        2 => msg!("two"),
+        _ => msg!("panic {}", key),
     }
     msg!(
         "program_id {} \n
